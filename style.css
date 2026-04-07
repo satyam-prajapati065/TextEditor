@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 991px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+    padding: 24px;
+    outline: none;
+    max-height: 60vh;
+    height: 60vh;
+    overflow: auto;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.toolbar {
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.head {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.head #fileName {
+    max-width: 120px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.head #fileName:hover {
+    border-color: #4a90e2;
+}
+
+.head #fileName:focus {
+    border-color: #4a90e2;
+}
+
+.head select {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.head .color {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    padding: 0 12px;
+    transition: all 0.2s ease;
+}
+
+.head .color:hover {
+    border-color: #4a90e2;
+}
+
+.head .color span {
+    font-size: 14px;
+    color: #333;
+}
+
+.head .color input {
+    border: none;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.toolbar .btn-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.toolbar .btn-toolbar button {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    transition: all 0.2 ease;
+}
+
+.toolbar .btn-toolbar button:hover {
+    border-color: #4a90e2;
+}
+
+.head select:hover {
+    border-color: #4a90e2;
+}
+
+#show-code[data-active="true"] {
+    background-color: #4a90e2;
+    color: #fff;
+    border-color: #4a90e2;
+}
